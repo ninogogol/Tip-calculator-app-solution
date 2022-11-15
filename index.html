@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <script src="app.js" defer></script>
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/logo.svg" alt="">
+  </header>
+
+  <div class="main-container">
+    <div class="part-1">
+      <div class="white">
+        <form action="">
+          <label for="bill-input" class="text">Bill</label>
+          <input class="dollar" type="text" id="bill-input" value="142.55">
+        </form>
+        <div>
+          <span class="text">Select Tip %</span>
+          <div class="grid">
+            <button class="grid-item">5%</button>
+            <button class="grid-item">10%</button>
+            <button class="grid-item active-btn">15%</button>
+            <button class="grid-item">25%</button>
+            <button class="grid-item">50%</button>
+            <button class="grid-item custom">Custom</button>  
+          </div>
+        </div>
+        <form action="">
+          <label for="number-of-ppl" class="text">Number of People</label>
+          <input class="person" type="text" id="number-of-ppl" value="5">
+        </form>  
+      </div>
+    </div>
+    <div class="part-2">
+      <div class="green">
+        <div class="tip-amount">
+          <div>
+            <span style="display: block;">Tip Amount</span>
+            <span class="person-small-txt">/ person</span>
+          </div>
+          <div>
+            <span class="amount-total-txt">$4.27</span>
+          </div>
+        </div>
+        <div class="total">
+          <div>
+            <span style="display: block;">Total</span>
+            <span class="person-small-txt">/ person</span>
+          </div>
+          <div>
+            <span class="amount-total-txt">$32.79</span>
+          </div>
+        </div>
+        <div>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/nino-gogoladze-80a075227/" target="_blank">Nino</a>.
+  </div>
+</body>
+</html>
